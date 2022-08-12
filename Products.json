@@ -1,0 +1,17 @@
+[
+  {
+    "ProductCode": 12,
+    "ProductName": "Plant",
+    "ProductValue": 100
+  },
+  {
+    "ProductCode": 79,
+    "ProductName": "Armor",
+    "ProductValue": 1200
+  },
+  {
+    "ProductCode": 9,
+    "ProductName": "Ring",
+    "ProductValue": 200
+  }
+]
