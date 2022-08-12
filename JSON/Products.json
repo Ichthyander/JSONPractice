@@ -1,0 +1,27 @@
+[
+  {
+    "ProductCode": 101,
+    "ProductName": "Bulb",
+    "ProductValue": 10
+  },
+  {
+    "ProductCode": 102,
+    "ProductName": "Potato",
+    "ProductValue": 15
+  },
+  {
+    "ProductCode": 102,
+    "ProductName": "Ring",
+    "ProductValue": 200
+  },
+  {
+    "ProductCode": 104,
+    "ProductName": "Carrot",
+    "ProductValue": 10
+  },
+  {
+    "ProductCode": 105,
+    "ProductName": "Apple",
+    "ProductValue": 5
+  }
+]

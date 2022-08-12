@@ -20,7 +20,7 @@ namespace Task_1
     {
         static void Main(string[] args)
         {
-            const int arrayLength = 3;
+            const int arrayLength = 5;
             Product[] products = new Product[arrayLength];
 
             for (int i = 0; i < arrayLength; i++)
@@ -45,9 +45,15 @@ namespace Task_1
                 Encoder = JavaScriptEncoder.Create(UnicodeRanges.BasicLatin, UnicodeRanges.Cyrillic),
                 WriteIndented = true
             };
-            
-            string path = "../../../Products.json";           
-            using (StreamWriter sw = new StreamWriter(path))
+
+            //Сохраняем файл в специально отведенную директорию
+            string dirPath = "../../../JSON";
+            if (!Directory.Exists(dirPath))
+            {
+                Directory.CreateDirectory(dirPath);
+            }
+            string filePath = dirPath + "/Products.json";           
+            using (StreamWriter sw = new StreamWriter(filePath))
             {
                 sw.WriteLine(JsonSerializer.Serialize(products, options));
             }
